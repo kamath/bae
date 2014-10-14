@@ -1,0 +1,25 @@
+@import url(animate.css);
+@import url(bootstrap.css);
+@import url(font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html,
+body
+{
+	font-family: 'Open Sans';
+	height: 100%;
+	width: 100%;
+}
+
+@-webkit-keyframes pulse { 0% {background-color: #45CEEF;} 25% {background-color: #FFF5A5;} 50% {background-color: #FFD4DA;} 75% {background-color: #99D2E4;} 100% {background-color: #D8CAB4;} }
+
+.jumbotron {
+    background-color: #45CEEF; -webkit-animation: pulse 4s infinite alternate;
+    height: 100%;
+	width: 100%;
+}
+
+#title
+{
+    padding-top: 20%;
+}
