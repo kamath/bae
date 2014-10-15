@@ -3,9 +3,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta name"description" content="A simple button that says bae when you click it">
 	<meta name="keywords" content="bae,Andy,Kamath,Hackgician">
-	<script src="js/jQuery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/WOW.js"></script>
 	<title>Bae</title>
 	<script src="//www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 </head>
@@ -15,26 +12,11 @@
 	<script type="text/javascript">new WOW().init();</script>
 	<script type="text/javascript">
 		function bae()
-{
-	var audio = new Audio('bae.m4a');
-	audio.play();
-	Parse.initialize("1PZHUAi25XfTmIw8Drh4jdMrfEMtnL0WFN8jGVEt", "VQgKyXjgS1cAIMw7vUtJmCAGPYirtPzWa2bH5vKI");
-	var bae = Parse.Object.Extend("Bae");
-	var Bae = new bae();
-	var query = new Parse.Query(bae);
-	query.get("s9FGPRavRz", {
-  		success: function(Bae) {
-    		// The object was retrieved successfully.
-    		var votes = Bae.get("totalBae");
-    		Bae.set("totalBae",votes++);
-    		Bae.save();
-  		},
-  	error: function(object, error) {
-	    // The object was not retrieved successfully.
-    	// error is a Parse.Error with an error code and message.
-  		}
-	});
-}
+		{
+			var audio = new Audio('bae.m4a');
+			audio.play();
+			
+		}
 	</script>
 </body>
 </html>
